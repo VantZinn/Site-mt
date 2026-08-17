@@ -26,3 +26,14 @@ Você pode publicar gratuitamente em GitHub Pages, Cloudflare Pages, Netlify ou 
 3. Fotos reais do Matheus.
 4. Logo / monograma próprio.
 5. Domínio personalizado.
+
+
+## Atualização 2
+- Nova tela de carregamento cinematográfica com câmera em frente ao monograma MB.
+- Barra de carregamento real e saída garantida (fallback de 4,5 s), corrigindo o travamento no loader.
+- Efeito de scan, respiração/zoom e brilho.
+- Serviços atualizados com base no portfólio mostrado no vídeo enviado.
+- WhatsApp: +55 27 99642-1582
+- Instagram: @matheux_braga
+- Email: contatomatheusbraga1@gmail.com
+- Localização: Vila Velha - ES
