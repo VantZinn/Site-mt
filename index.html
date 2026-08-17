@@ -1,233 +1,186 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#070707">
-  <meta name="description" content="Portfólio de Matheus Braga — videomaker, direção criativa e produção audiovisual.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Matheus Braga — videomaker, direção, captação e edição audiovisual." />
+  <meta name="theme-color" content="#080808" />
   <title>Matheus Braga — Videomaker</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
-  <div class="cursor" aria-hidden="true"></div>
-  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor cursor-dot" aria-hidden="true"></div>
+  <div class="cursor cursor-ring" aria-hidden="true"></div>
 
-<header class="nav" id="nav">
-    <a class="logo magnetic" href="#top" aria-label="Matheus Braga">MB<span>•</span></a>
-    <nav class="menu" aria-label="Navegação principal">
+  <header class="site-header" id="top">
+    <a href="#top" class="brand" aria-label="Matheus Braga - início">
+      <span class="brand-mark">MB</span>
+      <span class="brand-text">MATHEUS<br>BRAGA</span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#trabalhos">Trabalhos</a>
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
-      <a href="#projetos">Projetos</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a class="nav-cta magnetic" href="https://wa.me/5527996421582" target="_blank" rel="noopener">FALAR COMIGO <span>↗</span></a>
+    <a class="header-cta magnetic" href="#contato"><span>Iniciar projeto</span><span class="arrow">↗</span></a>
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-glow hero-glow-a"></div>
-      <div class="hero-glow hero-glow-b"></div>
-
+  <main>
+    <section class="hero section-pad">
+      <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div>
+      <div class="eyebrow reveal"><span class="pulse"></span> DISPONÍVEL PARA NOVOS PROJETOS</div>
       <div class="hero-grid">
-        <div class="hero-left">
-          <p class="eyebrow reveal"><span></span> VIDEOMAKER · DIREÇÃO CRIATIVA · STORYTELLING</p>
-          <div class="hero-title">
-            <div class="line-mask"><h1>IMAGENS</h1></div>
-            <div class="line-mask"><h1 class="outline">QUE FAZEM</h1></div>
-            <div class="line-mask"><h1>VOCÊ <em>PARAR.</em></h1></div>
-          </div>
-          <div class="hero-meta reveal">
-            <p>Conteúdo audiovisual construído para <strong>conectar pessoas, posicionar marcas e gerar impacto.</strong></p>
-            <a class="round-link magnetic" href="#projetos"><span>VER</span><b>PROJETOS</b><i>↘</i></a>
-          </div>
-        </div>
-
-        <aside class="hero-side reveal">
-          <span class="mini-label">BASEADO EM</span>
-          <strong>VILA VELHA<br>ESPÍRITO SANTO</strong>
-          <span class="mini-label">DISPONÍVEL PARA</span>
-          <strong>PROJETOS<br>& COLABS</strong>
-        </aside>
-      </div>
-
-      <div class="scroll-cue">
-        <span>SCROLL TO EXPLORE</span>
-        <i></i>
-      </div>
-    </section>
-
-    <section class="ticker" aria-label="Especialidades">
-      <div class="ticker-track">
-        <span>CAPTAÇÃO PROFISSIONAL ✦</span>
-        <span>EDIÇÃO DE VÍDEO ✦</span>
-        <span>STORYTELLING ✦</span>
-        <span>CONTEÚDO PARA MARCAS ✦</span>
-        <span>DIREÇÃO CRIATIVA ✦</span>
-        <span>REELS · TIKTOK · SHORTS ✦</span>
-        <span>CAPTAÇÃO PROFISSIONAL ✦</span>
-        <span>EDIÇÃO DE VÍDEO ✦</span>
-        <span>STORYTELLING ✦</span>
-        <span>CONTEÚDO PARA MARCAS ✦</span>
-        <span>DIREÇÃO CRIATIVA ✦</span>
-        <span>REELS · TIKTOK · SHORTS ✦</span>
-      </div>
-    </section>
-
-    <section class="about section" id="sobre">
-      <div class="section-index reveal">01 / SOBRE MIM</div>
-
-      <div class="about-main">
-        <p class="about-manifesto reveal">
-          EU NÃO ENTREGO SÓ UM VÍDEO.<br>
-          EU CONSTRUO UMA <span>EXPERIÊNCIA</span><br>
-          QUE COMUNICA, CONECTA E<br>
-          <em>PERMANECE NA MEMÓRIA.</em>
-        </p>
-
-        <div class="about-columns">
-          <div class="portrait-card reveal">
-            <div class="portrait-frame">
-              <img src="assets/frame_4.jpg" alt="Referência visual do portfólio de Matheus Braga">
-              <div class="portrait-overlay"></div>
-            </div>
-            <div class="portrait-caption">
-              <span>MATHEUS BRAGA</span>
-              <span>VIDEOMAKER</span>
-            </div>
-          </div>
-
-          <div class="about-text reveal">
-            <span class="mini-label">QUEM SOU</span>
-            <p>Sou Matheus Braga, videomaker focado em transformar ideias em narrativas visuais. Meu trabalho combina planejamento, criatividade e execução para criar conteúdos autênticos, alinhados aos objetivos de cada cliente.</p>
-            <p>Atuo em todas as etapas da produção — do conceito e roteiro à captação, edição e entrega final — sempre buscando uma estética forte, ritmo preciso e comunicação clara.</p>
-            <a href="#contato" class="text-link magnetic">VAMOS CRIAR ALGO JUNTOS <span>↗</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="understand section">
-      <div class="section-index reveal">02 / ENTENDA O VIDEOMAKER</div>
-      <div class="understand-grid">
-        <div class="huge-word reveal">NÃO É<br><span>SÓ CÂMERA.</span></div>
-        <div class="understand-copy reveal">
-          <p>O videomaker une visão criativa, estratégia e técnica para transformar uma ideia em conteúdo que funciona. Cada escolha — enquadramento, luz, movimento, trilha, ritmo e cor — precisa servir à mensagem.</p>
-          <div class="pill-row">
-            <span>ESTRATÉGIA</span><span>ROTEIRO</span><span>CAPTAÇÃO</span><span>EDIÇÃO</span><span>ENTREGA</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="services section" id="servicos">
-      <div class="section-head reveal">
         <div>
-          <span class="section-index">03 / TIPOS DE CONTEÚDOS</span>
-          <h2>DO PRIMEIRO<br><em>FRAME</em> AO RESULTADO.</h2>
+          <h1 class="hero-title">
+            <span class="line reveal"><span>IMAGENS QUE</span></span>
+            <span class="line reveal delay-1"><span>FAZEM <em>VOCÊ</em></span></span>
+            <span class="line reveal delay-2"><span>SENTIR.</span></span>
+          </h1>
+          <p class="hero-copy reveal delay-3">Direção, captação e edição audiovisual para marcas e pessoas que querem sair do comum e transformar atenção em conexão.</p>
+          <div class="hero-actions reveal delay-3">
+            <a href="#trabalhos" class="btn btn-primary magnetic"><span>Ver projetos</span><span>↓</span></a>
+            <button class="btn btn-ghost showreel-btn" type="button"><span class="play">▶</span> Assistir showreel</button>
+          </div>
         </div>
-        <p>Serviços pensados para marcas, negócios, eventos e criadores que precisam comunicar com presença.</p>
+        <div class="hero-reel reveal delay-2" data-tilt>
+          <div class="reel-media">
+            <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1400&q=85" alt="Câmera profissional em produção audiovisual" />
+            <div class="reel-shade"></div>
+            <div class="reel-meta"><span>SHOWREEL '26</span><span>01:24</span></div>
+            <button class="reel-play showreel-btn" aria-label="Assistir showreel"><span>▶</span></button>
+          </div>
+          <div class="floating-tag tag-one">DIREÇÃO</div>
+          <div class="floating-tag tag-two">EDIÇÃO</div>
+        </div>
       </div>
+      <div class="hero-footer reveal delay-3">
+        <div class="scroll-hint"><span class="scroll-line"></span> ROLE PARA EXPLORAR</div>
+        <div class="hero-stats"><span><strong>+50</strong> projetos</span><span><strong>4K</strong> delivery</span><span><strong>100%</strong> autoral</span></div>
+      </div>
+    </section>
 
+    <section class="marquee-wrap" aria-label="Especialidades">
+      <div class="marquee"><span>DIREÇÃO CRIATIVA ✦ CAPTAÇÃO ✦ EDIÇÃO ✦ COLOR GRADING ✦ MOTION ✦ STORYTELLING ✦ </span><span aria-hidden="true">DIREÇÃO CRIATIVA ✦ CAPTAÇÃO ✦ EDIÇÃO ✦ COLOR GRADING ✦ MOTION ✦ STORYTELLING ✦ </span></div>
+    </section>
+
+    <section class="works section-pad" id="trabalhos">
+      <div class="section-head reveal">
+        <div><span class="kicker">01 / PORTFÓLIO</span><h2>TRABALHOS<br><span>SELECIONADOS</span></h2></div>
+        <p>Projetos construídos para prender atenção, transmitir personalidade e criar uma imagem que fica na memória.</p>
+      </div>
+      <div class="filters reveal">
+        <button class="filter active" data-filter="all">Todos <sup>06</sup></button>
+        <button class="filter" data-filter="commercial">Comercial <sup>03</sup></button>
+        <button class="filter" data-filter="social">Social <sup>02</sup></button>
+        <button class="filter" data-filter="music">Music <sup>01</sup></button>
+      </div>
+      <div class="project-grid">
+        <article class="project project-wide reveal" data-category="commercial" data-tilt>
+          <div class="project-img"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=85" alt="Produção audiovisual de evento" /><span class="view-project">VER PROJETO ↗</span></div>
+          <div class="project-info"><div><span class="project-num">01</span><h3>ENERGY / BRAND FILM</h3></div><span>Direção · Captação · Edição</span></div>
+        </article>
+        <article class="project reveal" data-category="music" data-tilt>
+          <div class="project-img portrait"><img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1000&q=85" alt="Artista durante gravação de videoclipe" /><span class="view-project">VER PROJETO ↗</span></div>
+          <div class="project-info"><div><span class="project-num">02</span><h3>NOITE / MUSIC VIDEO</h3></div><span>Direção · Color</span></div>
+        </article>
+        <article class="project reveal" data-category="social" data-tilt>
+          <div class="project-img portrait"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=85" alt="Campanha de moda em produção" /><span class="view-project">VER PROJETO ↗</span></div>
+          <div class="project-info"><div><span class="project-num">03</span><h3>RAW / FASHION</h3></div><span>Social · Reels</span></div>
+        </article>
+        <article class="project project-wide reveal" data-category="commercial" data-tilt>
+          <div class="project-img"><img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1600&q=85" alt="Evento corporativo filmado" /><span class="view-project">VER PROJETO ↗</span></div>
+          <div class="project-info"><div><span class="project-num">04</span><h3>PULSE / EVENT FILM</h3></div><span>Captação · Pós-produção</span></div>
+        </article>
+        <article class="project reveal" data-category="social" data-tilt>
+          <div class="project-img portrait"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85" alt="Editorial de moda" /><span class="view-project">VER PROJETO ↗</span></div>
+          <div class="project-info"><div><span class="project-num">05</span><h3>URBAN / CAMPAIGN</h3></div><span>Conteúdo · Social</span></div>
+        </article>
+        <article class="project reveal" data-category="commercial" data-tilt>
+          <div class="project-img portrait"><img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=1000&q=85" alt="Cena cinematográfica em baixa luz" /><span class="view-project">VER PROJETO ↗</span></div>
+          <div class="project-info"><div><span class="project-num">06</span><h3>FRAME / PRODUCT</h3></div><span>Produto · Motion</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="sobre">
+      <div class="about-sticky"><span class="kicker">02 / SOBRE</span></div>
+      <div class="about-content">
+        <h2 class="about-statement reveal">EU NÃO GRAVO<br>APENAS <span>VÍDEOS.</span><br>EU CONSTRUO<br><em>PERCEPÇÃO.</em></h2>
+        <div class="about-bottom">
+          <div class="about-photo reveal" data-tilt><img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1000&q=85" alt="Videomaker trabalhando atrás da câmera" /><span>MATHEUS BRAGA — VIDEOMAKER</span></div>
+          <div class="about-text reveal"><p>Para mim, cada frame precisa ter intenção. Combino olhar cinematográfico, ritmo e estratégia para transformar ideias em peças audiovisuais que parecem grandes — e fazem a marca ser percebida assim.</p><p>Do conceito à entrega, cada detalhe é pensado para criar impacto visual sem perder a mensagem.</p><a href="#contato" class="text-link">VAMOS CRIAR ALGO FORTE <span>↗</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section-pad" id="servicos">
+      <div class="section-head reveal"><div><span class="kicker">03 / SERVIÇOS</span><h2>DO BRIEFING<br><span>AO PLAY.</span></h2></div><p>Uma produção completa, com estética, técnica e intenção em cada etapa.</p></div>
       <div class="service-list">
-        <article class="service reveal">
-          <span>01</span><h3>Captação profissional</h3><p>Imagem, composição, movimento e luz com intenção.</p><b>↗</b>
-        </article>
-        <article class="service reveal">
-          <span>02</span><h3>Edição de vídeos</h3><p>Ritmo, cortes, sound design e finalização.</p><b>↗</b>
-        </article>
-        <article class="service reveal">
-          <span>03</span><h3>Roteiros & storytelling</h3><p>Narrativas que seguram atenção e dão direção à mensagem.</p><b>↗</b>
-        </article>
-        <article class="service reveal">
-          <span>04</span><h3>Reels, TikTok & Shorts</h3><p>Conteúdo vertical pensado para retenção e compartilhamento.</p><b>↗</b>
-        </article>
-        <article class="service reveal">
-          <span>05</span><h3>Institucionais & promocionais</h3><p>Filmes que apresentam, posicionam e valorizam sua marca.</p><b>↗</b>
-        </article>
-        <article class="service reveal">
-          <span>06</span><h3>Cobertura de eventos</h3><p>Registro vivo, dinâmico e emocional dos melhores momentos.</p><b>↗</b>
-        </article>
-        <article class="service reveal">
-          <span>07</span><h3>Direção criativa</h3><p>Conceito visual, referências, narrativa e consistência estética.</p><b>↗</b>
-        </article>
-        <article class="service reveal">
-          <span>08</span><h3>Conteúdo estratégico</h3><p>Planejamento audiovisual para marcas, negócios e campanhas.</p><b>↗</b>
-        </article>
+        <article class="service-item reveal"><span class="service-num">01</span><div><h3>DIREÇÃO CRIATIVA</h3><p>Conceito, referências, narrativa, roteiro e direção visual para transformar uma ideia em linguagem própria.</p></div><span class="service-icon">↗</span></article>
+        <article class="service-item reveal"><span class="service-num">02</span><div><h3>CAPTAÇÃO</h3><p>Produção audiovisual com enquadramento, movimento, luz e áudio pensados para um resultado cinematográfico.</p></div><span class="service-icon">↗</span></article>
+        <article class="service-item reveal"><span class="service-num">03</span><div><h3>EDIÇÃO & COLOR</h3><p>Montagem com ritmo, sound design, tratamento de cor e acabamento para entregar uma peça pronta para impressionar.</p></div><span class="service-icon">↗</span></article>
+        <article class="service-item reveal"><span class="service-num">04</span><div><h3>CONTEÚDO SOCIAL</h3><p>Reels, campanhas e conteúdos verticais com linguagem rápida, retenção e identidade visual consistente.</p></div><span class="service-icon">↗</span></article>
       </div>
     </section>
 
-    <section class="projects section" id="projetos">
-      <div class="section-head reveal">
-        <div>
-          <span class="section-index">04 / PROJETOS CRIADOS</span>
-          <h2>TRABALHOS QUE<br><em>GANHAM VIDA.</em></h2>
-        </div>
-        <p>Uma seleção visual baseada nos projetos apresentados no portfólio original.</p>
-      </div>
-
-      <div class="projects-grid">
-        <article class="project-card project-tall reveal tilt">
-          <div class="project-media"><img src="assets/frame_22.jpg" alt="Projeto audiovisual em destaque"></div>
-          <div class="project-meta"><div><span>01</span><h3>Conteúdo Cinematográfico</h3></div><b>PLAY ↗</b></div>
-        </article>
-
-        <article class="project-card reveal tilt">
-          <div class="project-media"><img src="assets/frame_24.jpg" alt="Projeto audiovisual para marcas"></div>
-          <div class="project-meta"><div><span>02</span><h3>Marcas & Negócios</h3></div><b>PLAY ↗</b></div>
-        </article>
-
-        <article class="project-card reveal tilt">
-          <div class="project-media"><img src="assets/frame_26.jpg" alt="Conteúdo vertical para redes sociais"></div>
-          <div class="project-meta"><div><span>03</span><h3>Vertical / Social</h3></div><b>PLAY ↗</b></div>
-        </article>
-
-        <article class="project-card project-wide reveal tilt">
-          <div class="project-media"><img src="assets/frame_20.jpg" alt="Projetos criados por Matheus Braga"></div>
-          <div class="project-meta"><div><span>04</span><h3>Direção & Produção</h3></div><b>EXPLORE ↗</b></div>
-        </article>
-      </div>
-
-      <div class="projects-note reveal">
-        <span>UMA JORNADA DE</span>
-        <strong>ESTRATÉGIA, CONTEÚDO & CRIATIVIDADE.</strong>
-      </div>
-    </section>
-
-    <section class="statement">
-      <div class="statement-orb"></div>
-      <p class="reveal">O OBJETIVO NÃO É<br>FAZER “MAIS UM VÍDEO”.<br>É CRIAR ALGO QUE<br><span>PRENDA, CONECTE E MOVA.</span></p>
-    </section>
-
-    <section class="contact section" id="contato">
-      <div class="contact-top">
-        <span class="section-index reveal">05 / VAMOS NOS CONECTAR</span>
-        <div class="contact-title reveal">
-          <span>TEM UMA IDEIA?</span>
-          <strong>VAMOS TRANSFORMAR<br>EM <em>IMAGEM.</em></strong>
+    <section class="process section-pad">
+      <span class="kicker reveal">04 / PROCESSO</span>
+      <div class="process-grid">
+        <div class="process-intro reveal"><h2>SIMPLES.<br>CLARO.<br><span>EFICIENTE.</span></h2><p>Você acompanha o projeto do primeiro insight ao arquivo final.</p></div>
+        <div class="steps">
+          <div class="step reveal"><span>01</span><div><h3>Imersão</h3><p>Entendo objetivo, público, referências e o resultado que o projeto precisa gerar.</p></div></div>
+          <div class="step reveal"><span>02</span><div><h3>Conceito</h3><p>Defino a direção criativa, linguagem visual, roteiro e plano de produção.</p></div></div>
+          <div class="step reveal"><span>03</span><div><h3>Produção</h3><p>Captação organizada, direção no set e atenção total aos detalhes.</p></div></div>
+          <div class="step reveal"><span>04</span><div><h3>Finalização</h3><p>Edição, cor, som, revisão e entrega nos formatos necessários.</p></div></div>
         </div>
       </div>
+    </section>
 
-      <div class="contact-grid reveal">
-        <a class="contact-card magnetic" href="https://wa.me/5527996421582" target="_blank" rel="noopener">
-          <span>WHATSAPP</span><strong>+55 27 99642-1582</strong><b>↗</b>
-        </a>
-        <a class="contact-card magnetic" href="mailto:contatomatheusbraga1@gmail.com">
-          <span>EMAIL</span><strong>contatomatheusbraga1@gmail.com</strong><b>↗</b>
-        </a>
-        <a class="contact-card magnetic" href="https://instagram.com/matheux_braga" target="_blank" rel="noopener">
-          <span>INSTAGRAM</span><strong>@matheux_braga</strong><b>↗</b>
-        </a>
+    <section class="numbers section-pad">
+      <div class="metric reveal"><strong data-count="50" data-prefix="+">0</strong><span>PROJETOS<br>ENTREGUES</span></div>
+      <div class="metric reveal"><strong data-count="30" data-prefix="+">0</strong><span>CLIENTES<br>ATENDIDOS</span></div>
+      <div class="metric reveal"><strong data-count="5" data-suffix="★">0</strong><span>FOCO EM<br>EXPERIÊNCIA</span></div>
+      <div class="metric reveal"><strong data-count="100" data-suffix="%">0</strong><span>COMPROMISSO<br>COM A ENTREGA</span></div>
+    </section>
+
+    <section class="testimonial section-pad">
+      <div class="quote-mark">“</div>
+      <blockquote class="reveal">O resultado não parece apenas bonito. Parece <em>certo para a marca.</em> É esse nível de cuidado que muda tudo.</blockquote>
+      <div class="quote-author reveal"><span class="avatar">MB</span><div><strong>PROJETOS COM INTENÇÃO</strong><small>Estética + Estratégia + Execução</small></div></div>
+    </section>
+
+    <section class="faq section-pad">
+      <div><span class="kicker reveal">05 / FAQ</span><h2 class="reveal">SEM<br><span>DÚVIDAS.</span></h2></div>
+      <div class="faq-list">
+        <details class="reveal"><summary>Você atende fora da sua cidade?<span>+</span></summary><p>Sim. Projetos em outras cidades podem ser planejados com antecedência, incluindo logística de deslocamento e produção.</p></details>
+        <details class="reveal"><summary>Quanto tempo leva uma produção?<span>+</span></summary><p>Depende do escopo. Após o briefing você recebe um cronograma claro com datas de pré-produção, gravação, primeira versão e entrega final.</p></details>
+        <details class="reveal"><summary>Você faz só a edição?<span>+</span></summary><p>Sim. Posso assumir apenas a pós-produção quando você já possui o material bruto, mantendo o mesmo cuidado de narrativa, ritmo e acabamento.</p></details>
+        <details class="reveal"><summary>Como funciona o orçamento?<span>+</span></summary><p>Cada projeto é dimensionado de acordo com objetivo, volume, equipe, locação, prazo e entregáveis. O orçamento é enviado de forma transparente.</p></details>
       </div>
+    </section>
 
-      <footer>
-        <div class="footer-logo">MB<span>•</span></div>
-        <span>© 2026 MATHEUS BRAGA</span>
-        <span>VILA VELHA · ES · BRASIL</span>
-      </footer>
+    <section class="contact section-pad" id="contato">
+      <div class="contact-glow"></div>
+      <span class="kicker reveal">06 / CONTATO</span>
+      <h2 class="reveal">TEM UMA IDEIA?<br><span>VAMOS DAR PLAY.</span></h2>
+      <p class="reveal">Conte o que você quer criar. Eu transformo briefing em imagem, ritmo e resultado.</p>
+      <a href="mailto:contato@matheusbraga.com" class="contact-button magnetic reveal"><span>FALAR SOBRE MEU PROJETO</span><span class="big-arrow">↗</span></a>
+      <div class="contact-meta reveal"><a href="#">Instagram ↗</a><a href="#">WhatsApp ↗</a><a href="mailto:contato@matheusbraga.com">E-mail ↗</a></div>
     </section>
   </main>
 
+  <footer class="footer section-pad"><div class="footer-brand">MATHEUS<br><span>BRAGA.</span></div><div><p>VIDEOMAKER & CREATIVE</p><p>BRASIL · 2026</p></div><a href="#top">VOLTAR AO TOPO ↑</a></footer>
+
+  <div class="modal" id="showreelModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Showreel">
+    <button class="modal-close" aria-label="Fechar">×</button>
+    <div class="modal-content"><div class="video-placeholder"><span class="play-large">▶</span><strong>SHOWREEL</strong><small>Substitua este bloco pelo seu vídeo do YouTube/Vimeo</small></div></div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
