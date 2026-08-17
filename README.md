@@ -33,3 +33,7 @@ O projeto é estático e pode ser publicado em GitHub Pages, Netlify, Vercel ou 
 
 ## Observação
 Os frames incluídos são referências extraídas da gravação do portfólio enviado. Para uma versão final de produção, substitua as imagens dos cards por thumbnails/fotos/vídeos originais em alta qualidade.
+
+
+## Correção do loader
+A barra agora vai de 0% a 100% em exatamente 4 segundos. Após 4 segundos, o loader é ocultado independentemente do carregamento de imagens, fontes ou rede. Há também um fallback para navegadores móveis.

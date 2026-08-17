@@ -30,7 +30,7 @@ button,input{font:inherit}
 .loader-progress-wrap{position:absolute;left:50%;bottom:10vh;transform:translateX(-50%);width:min(560px,68vw);text-align:center}
 .loader-progress-wrap>span{font-size:9px;letter-spacing:6px}
 .loader-progress{height:3px;background:rgba(255,255,255,.16);border:1px solid rgba(255,106,0,.5);border-radius:50px;margin:16px 0 10px;overflow:hidden}
-.loader-progress i{display:block;width:0;height:100%;background:linear-gradient(90deg,#ff4800,#ff8a2a,#fff);box-shadow:0 0 25px var(--accent);transition:width .1s linear}
+.loader-progress i{display:block;width:0;height:100%;background:linear-gradient(90deg,#ff4800,#ff8a2a,#fff);box-shadow:0 0 25px var(--accent);transition:none;will-change:width}
 .loader-progress-wrap b{font-size:15px;color:var(--accent2);letter-spacing:3px}
 .loader-bottom{position:absolute;left:8vw;right:8vw;bottom:4vh;display:flex;justify-content:space-between;color:#777;font-size:7px;letter-spacing:2.4px}
 @keyframes loaderBreath{0%,100%{transform:scale(1.03)}50%{transform:scale(1.075) translateY(-6px)}}
