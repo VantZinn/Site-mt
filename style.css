@@ -5,7 +5,6 @@
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;overflow-x:hidden}
-body.loading{overflow:hidden}
 a{color:inherit;text-decoration:none}
 img{display:block;width:100%}
 button,input{font:inherit}
@@ -15,26 +14,6 @@ button,input{font:inherit}
 .cursor,.cursor-dot{position:fixed;left:0;top:0;border-radius:50%;pointer-events:none;z-index:9999;mix-blend-mode:difference}
 .cursor{width:38px;height:38px;border:1px solid white;transform:translate(-50%,-50%);transition:width .2s,height .2s}
 .cursor-dot{width:4px;height:4px;background:white;transform:translate(-50%,-50%)}
-
-.loader{position:fixed;inset:0;z-index:10000;background:#020303;overflow:hidden;transition:opacity .9s var(--ease),visibility .9s}
-.loader.hide{opacity:0;visibility:hidden;pointer-events:none}
-.loader-bg{position:absolute;inset:-2%;background:url("assets/loader-cinema.png") center/cover no-repeat;animation:loaderBreath 4.5s ease-in-out infinite}
-.loader-vignette{position:absolute;inset:0;background:radial-gradient(circle at 50% 46%,transparent 18%,rgba(0,0,0,.12) 45%,rgba(0,0,0,.86) 100%)}
-.loader-scan{position:absolute;left:0;right:0;top:-5%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,106,0,.4),#fff,rgba(255,106,0,.5),transparent);box-shadow:0 0 20px rgba(255,106,0,.65);animation:scan 2.7s linear infinite}
-.loader-lines{position:absolute;inset:0;background:repeating-linear-gradient(to bottom,transparent 0 3px,rgba(255,255,255,.02) 3px 4px);opacity:.2}
-.loader-brand{position:absolute;top:7vh;left:50%;transform:translateX(-50%);text-align:center;text-shadow:0 2px 18px #000}
-.loader-kicker{display:block;font-size:10px;letter-spacing:8px;color:var(--accent);margin-bottom:12px}
-.loader-brand strong{font-size:clamp(16px,2vw,28px);letter-spacing:11px;font-weight:500}
-.loader-copy{position:absolute;top:43%;font-size:10px;line-height:4.6;letter-spacing:5px;color:#c7c7c7;text-shadow:0 2px 15px #000}
-.loader-copy-left{left:4vw}.loader-copy-right{right:4vw;text-align:right}
-.loader-progress-wrap{position:absolute;left:50%;bottom:10vh;transform:translateX(-50%);width:min(560px,68vw);text-align:center}
-.loader-progress-wrap>span{font-size:9px;letter-spacing:6px}
-.loader-progress{height:3px;background:rgba(255,255,255,.16);border:1px solid rgba(255,106,0,.5);border-radius:50px;margin:16px 0 10px;overflow:hidden}
-.loader-progress i{display:block;width:0;height:100%;background:linear-gradient(90deg,#ff4800,#ff8a2a,#fff);box-shadow:0 0 25px var(--accent);transition:none;will-change:width}
-.loader-progress-wrap b{font-size:15px;color:var(--accent2);letter-spacing:3px}
-.loader-bottom{position:absolute;left:8vw;right:8vw;bottom:4vh;display:flex;justify-content:space-between;color:#777;font-size:7px;letter-spacing:2.4px}
-@keyframes loaderBreath{0%,100%{transform:scale(1.03)}50%{transform:scale(1.075) translateY(-6px)}}
-@keyframes scan{0%{top:-5%;opacity:0}10%{opacity:.65}90%{opacity:.65}100%{top:105%;opacity:0}}
 
 .nav{position:fixed;top:0;left:0;width:100%;height:82px;padding:0 4.2vw;display:flex;align-items:center;justify-content:space-between;z-index:1000;background:linear-gradient(to bottom,rgba(7,7,7,.84),rgba(7,7,7,0));backdrop-filter:blur(6px);transition:transform .45s var(--ease)}
 .nav.hidden{transform:translateY(-105%)}
@@ -91,7 +70,6 @@ footer{margin-top:90px;padding-top:25px;border-top:1px solid var(--line);display
   .projects-grid{grid-template-columns:1fr;gap:55px}.project-tall,.project-wide{grid-column:auto;grid-row:auto}.project-media,.project-tall .project-media,.project-wide .project-media{height:62vw;min-height:360px}
   .contact-grid{grid-template-columns:1fr}.contact-card{min-height:120px}
   footer{align-items:flex-start;gap:15px;flex-direction:column}
-  .loader-copy{display:none}.loader-progress-wrap{width:78vw;bottom:12vh}.loader-bottom{display:none}.loader-bg{background-position:center}.loader-brand{top:6vh}.loader-brand strong{font-size:12px;letter-spacing:5px}.loader-kicker{font-size:7px;letter-spacing:5px}
 }
 @media(max-width:520px){
   .hero h1{font-size:16.7vw}.hero-meta p{font-size:13px}.round-link{width:82px;height:82px}

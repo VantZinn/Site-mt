@@ -37,3 +37,7 @@ Os frames incluídos são referências extraídas da gravação do portfólio en
 
 ## Correção do loader
 A barra agora vai de 0% a 100% em exatamente 4 segundos. Após 4 segundos, o loader é ocultado independentemente do carregamento de imagens, fontes ou rede. Há também um fallback para navegadores móveis.
+
+
+## Versão sem loading
+A tela de carregamento foi removida completamente. O conteúdo do site aparece imediatamente ao abrir a página.
