@@ -5,7 +5,7 @@ const techIntro=document.getElementById('techIntro');
 if(techIntro){
   const percent=document.getElementById('loadPercent');
   const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const duration=reduced?180:2450;
+  const duration=reduced?180:(isMobileViewport?1900:2450);
   const start=performance.now();
   const updatePercent=now=>{
     const progress=Math.min((now-start)/duration,1);
@@ -70,3 +70,10 @@ if(matchMedia('(pointer:fine)').matches){
 }
 
 document.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('details').forEach(other=>{if(other!==d)other.open=false})}));
+
+
+// Mobile adaptation helper
+const isMobileViewport = window.matchMedia('(max-width: 768px)').matches || /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+if (isMobileViewport) {
+  document.body.classList.add('mobile-device');
+}
