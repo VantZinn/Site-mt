@@ -1,3 +1,25 @@
+
+
+// Technological entrance sequence
+const techIntro=document.getElementById('techIntro');
+if(techIntro){
+  const percent=document.getElementById('loadPercent');
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const duration=reduced?180:2450;
+  const start=performance.now();
+  const updatePercent=now=>{
+    const progress=Math.min((now-start)/duration,1);
+    percent.textContent=Math.round(progress*100)+'%';
+    if(progress<1)requestAnimationFrame(updatePercent);
+  };
+  requestAnimationFrame(updatePercent);
+  window.setTimeout(()=>{
+    percent.textContent='100%';
+    techIntro.classList.add('is-done');
+    document.body.classList.remove('intro-active');
+    window.setTimeout(()=>techIntro.remove(),700);
+  },duration);
+}
 const header=document.querySelector('.site-header');
 window.addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>30),{passive:true});
 
