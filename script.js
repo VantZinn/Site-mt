@@ -1,3 +1,7 @@
+// Device detection must run before the intro sequence
+const isMobileViewport = window.matchMedia('(max-width: 900px)').matches || /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+if (isMobileViewport) document.body.classList.add('mobile-device');
+
 
 
 // Technological entrance sequence
@@ -70,10 +74,3 @@ if(matchMedia('(pointer:fine)').matches){
 }
 
 document.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('details').forEach(other=>{if(other!==d)other.open=false})}));
-
-
-// Mobile adaptation helper
-const isMobileViewport = window.matchMedia('(max-width: 768px)').matches || /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
-if (isMobileViewport) {
-  document.body.classList.add('mobile-device');
-}
